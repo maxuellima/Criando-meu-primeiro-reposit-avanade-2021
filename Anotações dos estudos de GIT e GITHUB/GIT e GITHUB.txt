@@ -1,0 +1,52 @@
+Git – Criado em 2005, é um sistema de versionamento de códigos  distribuído.
+Benefícios do aprendizado dessas tecnologias:
+1.	Controle de versão
+2.	Armazenamento em nuvem
+3.	Trabalho em equipe
+4.	Melhorar seu código
+5.	Reconhecimento
+
+O GIT é concebido por linha de comando. CLI. Command Line Interface. 
+Windows
+- CD
+- dir – listas as pastas dentro do diretório
+- mkdir
+- Del / rmdir
+- cls – limpa o promp de comando
+- TAB – autocompleta
+- echo – printa no terminal uma frase
+- > - redirecionador de fluxo 
+- del + o diretório :remove os arquivos
+- rmdir + o diretório :remove o diretório
+
+Tópicos fundamentais para entender o funcionamento do GIT
+SHA1 – Secure Hash Algotithm, é um conjunto de funções hash priptográficas projetadas pela NSA
+	A encriptação gera um conjunto de caracteres identificador de 40 digitos. 
+		Uso: openssl sha1
+
+Função Echo pega uma string e transforma em um hash
+Git é um sistema distribuído. Objetos internos do Git
+- Blobs: Os arquivos SHa1 e Open ficão salvos num objeto chamado Blob. Ele vai ter o tipo do objeto, o tamanho da string, uma barra ( \0 ) e o conteúdo do arquivo. O Blob não guarda o nome do arquivo.
+Ex: \0 ola mundo
+- Trees: Armazenam blobs. A árvore também guarda o nome do arquivo. Ela é responsável por montar as estruturas onde estão localizados os arquivos. Encapsula os diretórios.
+Ex: \0 blob sa4d8s texto.txt
+- Commits: junta tudo e dá alteração ao que se está fazendo. Aponta para a árvore, aponta para o parente, para um ator, mensagem. O commit tem um timestamp indicando a hora que foi criado.
+Sistema distribuído e seguro
+
+Chave SSH – Estabelecer uma conexão segura entre duas máquinas. Sempre haverá uma chave pública e uma chave privada. 
+Token de acesso pessoal 
+
+Tracked: Rastreados pelo GIt – Unmodified, modified, Staged(Onde ficam os arquivos se preparando para poder fazer parte de outro tipo de agrupamento)
+Untracked – Não rastreado.
+
+Git add – passar nome do arquivo, movendo o arquivo direto de untracked para staged
+
+Resolvendo conflitos
+
+
+Criando seu primeiro repositório
+Cria o repositório direto no site do github. Crie o arquivo README para poder editar seu conteúdo.  E de lá copia o link para jogar no git bash.  O comando para criar por meio do link é: abre a pasta em que vai tá o arquivo com o git bash > digita o comendo git clone e cola o link do repositório. 
+Para enviar: git add. ou git add -A(adiciona todos os arquivos) – isso envia apenas para o local
+Git commit -m “descrição do arquivo enviado” – envia o arquivo para o Github
+Git push origin main  - é o que finaliza o envio de tudo
+
